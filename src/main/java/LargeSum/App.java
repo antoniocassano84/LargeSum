@@ -2,10 +2,6 @@ package LargeSum;
 
 import java.math.BigDecimal;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     static String str =
@@ -117,7 +113,7 @@ public class App
             sum = sum.add(new BigDecimal(s.substring(i*batch, (i+1)*batch)));
         System.out.println("Answer is: " + sum.toString().substring(0, 10));
     }
-    
+
     public static void main(String[] args)
     {
         calculateLargeSum(str, 50);  // Ans= 5537376230
